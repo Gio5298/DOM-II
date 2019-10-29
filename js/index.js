@@ -37,14 +37,19 @@ const nav = document.querySelectorAll('.nav a').forEach(el =>{
     });
 
     //focus vvv
-// const button = document.querySelector('.content-pick .btn').forEach(e =>{
-//     e.addEventListener('focus', (event) => {
-//          e.style.background.color='pink';   
-//     });
-// });
-
-    //resize
+const button = document.querySelectorAll('.content-pick .btn').forEach(el =>{
+    el.addEventListener('focus', () =>{
+        el.style.border='2px solid red';
+    });
+});
+    //resize vvv
 const gundamVaca = document.querySelector('.img-content .img-fluid');
     window.addEventListener('resize', () =>{
         gundamVaca.src='img/gundam.jpg';
-    })
+    });
+
+    //keydown vvv
+document.addEventListener('keydown', (event) => {
+    const keydown = event.key;
+    alert('Trying to mess with our site? Do not, I repeat DO NOT press ' + keydown + '. Yes, I just told you to NOT press ' + keydown + '!');
+});

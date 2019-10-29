@@ -35,3 +35,16 @@ const nav = document.querySelectorAll('.nav a').forEach(el =>{
         event.target.style.transform ='scale(1)';
         event.target.style.transition ='all 0.5s';
     });
+
+    //focus vvv
+// const button = document.querySelector('.content-pick .btn').forEach(e =>{
+//     e.addEventListener('focus', (event) => {
+//          e.style.background.color='pink';   
+//     });
+// });
+
+    //resize
+const gundamVaca = document.querySelector('.img-content .img-fluid');
+    window.addEventListener('resize', () =>{
+        gundamVaca.src='img/gundam.jpg';
+    })

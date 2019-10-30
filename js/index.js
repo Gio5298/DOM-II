@@ -59,8 +59,8 @@ document.addEventListener('keydown', (event) => {
 });
 
     //select vvv
-const search = document.querySelectorAll('.content-pick .btn').forEach(el =>{
-    el.addEventListener('focus', () =>{
-        el.style.border='2px solid red';
-    });
-});
+// const search = document.querySelectorAll('.content-pick .btn').forEach(el =>{
+//     el.addEventListener('focus', () =>{
+//         el.style.border='2px solid red';
+//     });
+// });

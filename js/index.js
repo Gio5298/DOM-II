@@ -37,11 +37,15 @@ const nav = document.querySelectorAll('.nav a').forEach(el =>{
     });
 
     //focus vvv
-const button = document.querySelectorAll('.content-pick .btn').forEach(el =>{
-    el.addEventListener('focus', () =>{
-        el.style.border='2px solid red';
-    });
-});
+    const search = document.querySelector('.search-bar input');
+        search.addEventListener('focus', (event) => {
+         search.style.backgroundColor = 'yellow';
+    }, false);
+
+        search.addEventListener('blur', (event) => {
+        search.style.background = '';    
+      });
+
     //resize vvv
 const gundamVaca = document.querySelector('.img-content .img-fluid');
     window.addEventListener('resize', () =>{
@@ -52,4 +56,11 @@ const gundamVaca = document.querySelector('.img-content .img-fluid');
 document.addEventListener('keydown', (event) => {
     const keydown = event.key;
     alert('Trying to mess with our site? Do not, I repeat DO NOT press ' + keydown + '. Yes, I just told you to NOT press ' + keydown + '!');
+});
+
+    //select vvv
+const search = document.querySelectorAll('.content-pick .btn').forEach(el =>{
+    el.addEventListener('focus', () =>{
+        el.style.border='2px solid red';
+    });
 });

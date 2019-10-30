@@ -24,10 +24,21 @@
     }
 
     .nav {
-      width: 350px;
+      width: 500px;
       display: flex;
       justify-content: space-evenly;
 
+      .search-bar input[type=text] {
+        font-size: 1.3rem;
+        border: 1px solid grey;
+        border-radius: 4px 0 0 4px;
+         background: whitesmoke;
+      }
+      .search-bar button{
+        background-color: whitesmoke;
+        border: 1px solid black;
+        padding: 0 1rem;
+      }
       @media @mobile {
         width: 100%;
         justify-content: space-around;

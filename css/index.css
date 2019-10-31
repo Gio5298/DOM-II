@@ -200,9 +200,20 @@ img {
   }
 }
 .main-navigation .nav-container .nav {
-  width: 350px;
+  width: 500px;
   display: flex;
   justify-content: space-evenly;
+}
+.main-navigation .nav-container .nav .search-bar input[type=text] {
+  font-size: 1.3rem;
+  border: 1px solid grey;
+  border-radius: 4px 0 0 4px;
+  background: whitesmoke;
+}
+.main-navigation .nav-container .nav .search-bar button {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 0 1rem;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {
